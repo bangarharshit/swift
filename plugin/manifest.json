@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+
+  "name": "Swift: Video speed controller",
+  "short_name": "Swift",
+  "description": "Video speed control for all your favourite sites such as youtubue, netflix, prime :).",
+  "version": "0.0.1",
+
+  "browser_action": {
+    "default_icon": "icon128.png",
+    "default_popup": "popup.html",
+    "default_title": "Swift: Video speed controller"
+  },
+
+  "icons": {
+    "16":  "icon16.png",
+    "19":  "icon16.png",
+    "48":  "icon48.png",
+    "128": "icon128.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.youtube.com/*",
+        "*://*.netflix.com/*",
+        "*://*.primevideo.com/*",
+        "*://*.hotstar.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "storage",
+    "declarativeContent"
+  ],
+  "content_security_policy":"script-src 'self' https://ssl.google-analytics.com https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'"
+
+}

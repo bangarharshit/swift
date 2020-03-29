@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html style="width:250px;">
+    <head>
+        <link href="popup.css" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <title>Swift: Video Speed Controller</title>
+    </head>
+    <body id="default_theme">
+        <form>
+            <div class="center">
+                <h3>Change Video Speed</h3>
+            </div>
+            <div class="speed_selector menu-entry">
+                <input id="half" name="speed" type="radio" value="0.5">
+                <label for="half">0.5</label><br>
+            </div>
+            <div class="speed_selector menu-entry">
+                <input id="normal" name="speed" type="radio" value="1">
+                <label for="normal">1</label><br>
+            </div>
+            <div class="speed_selector menu-entry">
+                <input id="onehalf" name="speed" type="radio" value="1.5">
+                <label for="onehalf">1.5</label><br>
+            </div>
+            <div class="speed_selector menu-entry">
+                <input id="double" name="speed" type="radio" value="2">
+                <label for="double">2</label><br>
+            </div>
+        </form>
+
+        <div id="separator0" class="separator" style="display: block;"></div>
+
+        <div id="div_add_extra_keyword" class="menu-entry" style="display: block;">Custom Speed</div>
+        <div class="menu-entry-keyword">
+            <input style="width: 180px;" type="text" id="keyword_input" placeholder="Enter custom speed">
+            <button class="right btn_circle" id="keyword_submit_button"><i class="fa fa-refresh"></i></button>
+        </div>
+
+        <div id="div_slideout" style="cursor: pointer;">
+            <div style="margin: 5px 0px;">
+                <a id="link_open">Love Swift? Consider sharing!</a>
+            </div>
+        </div>
+
+        <div id="div_shareout">
+            <button class="btn"><a class="fa fa-facebook" href="http://www.facebook.com/sharer/sharer.php?u=https://chrome.google.com/webstore/detail/dlahfbaphedglnollagkcnmlhfahlhgi" target="_blank"></a></button>
+            <button class="btn"><a class="fa fa-twitter" href="http://twitter.com/share?url=https://chrome.google.com/webstore/detail/dlahfbaphedglnollagkcnmlhfahlhgi&text=Spot: Spoiler Blocker" target="_blank"></a></button>
+            <button class="btn"><a class="fa fa-envelope" href="mailto:?subject=Spot: Spoiler Blocker&body=Please install spoiler blocked on https://chrome.google.com/webstore/detail/spot-spoiler-blocker/dlahfbaphedglnollagkcnmlhfahlhgi" target="_blank"></a></button>
+            <button class="btn"><a class="fa fa-reddit" href="http://reddit.com/submit?url=https://chrome.google.com/webstore/detail/spot-spoiler-blocker/dlahfbaphedglnollagkcnmlhfahlhgi&title=Spot: Spoiler Blocker" target="_blank"></a></button>
+            <button class="btn"><a class="fa fa-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://chrome.google.com/webstore/detail/spot-spoiler-blocker/dlahfbaphedglnollagkcnmlhfahlhgi&title=Game%20of%20Spoils&summary=Chrome%20extension%20for%20blocking%20spoilers&source=LinkedIn
+        " target="_blank"></a></button>
+        </div>
+    </body>
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="popup.js"></script>
+</html>
