@@ -6,4 +6,4 @@ Netflix/Hotstar/PrimeVideo/Youtube (please reach out to add support for more sit
 
 Here is a screenshot:
 
-![Demo](https://github.com/bangarharshit/swift/demo_youtube.png)
+![Demo](https://github.com/bangarharshit/swift/blob/master/demo_youtube.png)
