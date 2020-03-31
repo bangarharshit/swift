@@ -6,10 +6,14 @@
   "description": "Video speed control for all your favourite sites such as youtubue, netflix, prime :).",
   "version": "0.0.1",
 
-  "browser_action": {
+  "page_action": {
     "default_icon": "icon128.png",
     "default_popup": "popup.html",
     "default_title": "Swift: Video speed controller"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
   },
 
   "icons": {
@@ -32,9 +36,6 @@
   ],
   "permissions": [
     "activeTab",
-    "storage",
     "declarativeContent"
-  ],
-  "content_security_policy":"script-src 'self' https://ssl.google-analytics.com https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'"
-
+  ]
 }
