@@ -29,7 +29,8 @@
         "*://www.youtube.com/*",
         "*://*.netflix.com/*",
         "*://*.primevideo.com/*",
-        "*://*.hotstar.com/*"
+        "*://*.hotstar.com/*",
+        "*://*.facebook.com/*"
       ],
       "js": ["content.js"]
     }

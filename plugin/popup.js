@@ -10,7 +10,14 @@ $(document).ready(function () {
 
     });
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-        chrome.tabs.sendMessage(tabs[0].id, {id: 'fetchSpeed'}, function (response) {
+        let url = tabs[0].url;
+        chrome.tabs.sendMessage(tabs[0].id, {id: 'fetchSpeed', url: url}, function (response) {
+            if (response == null) {
+                return;
+            }
+            if (isNaN(response.speed)) {
+                return;
+            }
             const speed = Number(response.speed);
             switch (speed) {
                 case 0.5:
@@ -34,6 +41,7 @@ $(document).ready(function () {
 
 const sendMethodToContent = function (speedValue) {
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-        chrome.tabs.sendMessage(tabs[0].id, {id: 'changeSpeed', speedVal: speedValue});
+        let url = tabs[0].url;
+        chrome.tabs.sendMessage(tabs[0].id, {id: 'changeSpeed', speedVal: speedValue, url: url});
     });
 };
