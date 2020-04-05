@@ -30,7 +30,8 @@
         "*://*.netflix.com/*",
         "*://*.primevideo.com/*",
         "*://*.hotstar.com/*",
-        "*://*.facebook.com/*"
+        "*://*.facebook.com/*",
+        "*://*.udemy.com/*"
       ],
       "js": ["content.js"]
     }
