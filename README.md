@@ -3,6 +3,8 @@
 It is a simple plugin to change your video speed on 
 Netflix/Hotstar/PrimeVideo/Youtube (please reach out to add support for more sites)
 
+This is great
+
 
 Here is a screenshot:
 
